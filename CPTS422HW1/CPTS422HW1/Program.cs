@@ -14,13 +14,26 @@ namespace CPTS422HW1
         {
             //Program p = new Program();
 
+            //test NumberedTextWriter
             NumberedTextWriter ntw = new NumberedTextWriter(Console.Out);
 
             ntw.WriteLine("Hello World!");
             ntw.WriteLine("Hi!");
 
-            Console.ReadKey();
-            
+            //test IndexedNumsStream,
+            IndexedNumsStream ins = new IndexedNumsStream(0);
+
+            byte[] buffer = new byte[512];
+
+            ins.SetLength(512);
+
+            ins.Read(buffer, 0, 512);
+
+            foreach (byte num in buffer)
+            {
+                Console.WriteLine(num);
+            }
+
         }
     }
 }
