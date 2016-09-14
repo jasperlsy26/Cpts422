@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{125767BA-2749-4BCF-BAA0-82429FA98AD9}</ProjectGuid>
+    <ProjectGuid>{0C174DBE-4289-41AC-9C67-41193D3CF120}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CPTS422HW2</RootNamespace>
-    <AssemblyName>CPTS422HW2</AssemblyName>
+    <RootNamespace>CPTS422HW3</RootNamespace>
+    <AssemblyName>CPTS422HW3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CS422\CS422.csproj">
-      <Project>{df2c4c7f-f2e8-43bd-820b-bd9fca0043e7}</Project>
-      <Name>CS422</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

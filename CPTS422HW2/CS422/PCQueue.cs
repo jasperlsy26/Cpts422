@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Siyang Li 11443579 CS422 hw2
+
+
+using System;
 
 namespace CS422
 {
@@ -10,8 +13,6 @@ namespace CS422
 
         public PCQueue()
         {
-            front = new Node();
-            end = new Node();
             dummy = new Node();
             front = end = dummy;
             
@@ -25,6 +26,7 @@ namespace CS422
 
         public bool Dequeue(ref int out_value)
         {
+            
             // empty queue
             if(object.ReferenceEquals(dummy, end)) { return false; }
 
@@ -36,7 +38,9 @@ namespace CS422
             //case: only 1 note----right now end, front -> note, dummy -> null
             if (object.ReferenceEquals(front, end))
             {
-                front = end = dummy;
+                //not front = end = dummy;
+                //right here, cast 
+                dummy = front;
             }
             //case: mutiple notes in queue
             else
@@ -45,6 +49,8 @@ namespace CS422
             }
 
             return true;
+            
+
         }
 
         public class Node
